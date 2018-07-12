@@ -6,14 +6,14 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-28 15:29+0200\n"
-"PO-Revision-Date: 2018-06-17 10:48+0200\n"
+"PO-Revision-Date: 2018-07-12 20:38+0200\n"
 "Last-Translator: \n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #: ../Doc/library/string.rst:2
 msgid ":mod:`string` --- Common string operations"
@@ -1132,12 +1132,21 @@ msgid ""
 "Python.  As an example of a library built on template strings for i18n, see "
 "the `flufl.i18n <http://flufli18n.readthedocs.io/en/latest/>`_ package."
 msgstr ""
+"Les chaînes modèles apportent des substitutions de chaînes plus simples "
+"comme décrit dans :pep:`292`. L’internationalisation est un cas "
+"d’utilisation pour les chaînes modèles (i18n). Effectivement, la syntaxe et "
+"les fonctionnalités simples le rende facile à traduire comparé à d’autres "
+"formatages chaînes natives en Python. Pour un exemple de librairie fait sur "
+"les chaînes de caractères pour i18n, se référer au package `flufl.i18n "
+"<http://flufli18n.readthedocs.io/en/latest/>`_"
 
 #: ../Doc/library/string.rst:671
 msgid ""
 "Template strings support ``$``-based substitutions, using the following "
 "rules:"
 msgstr ""
+"Support des chaînes modèle``$``-Substitutions, utilisant les règles "
+"suivantes :"
 
 #: ../Doc/library/string.rst:673
 msgid "``$$`` is an escape; it is replaced with a single ``$``."
@@ -1270,7 +1279,6 @@ msgstr ""
 "attributs suivants :"
 
 #: ../Doc/library/string.rst:752
-#, fuzzy
 msgid ""
 "*delimiter* -- This is the literal string describing a placeholder "
 "introducing delimiter.  The default value is ``$``.  Note that this should "
@@ -1280,9 +1288,12 @@ msgid ""
 "the subclass's class namespace)."
 msgstr ""
 "*delimiter* -- La chaîne littérale décrivant le délimiteur pour introduire "
-"un substituant. Sa valeur par défaut ests ``$``. Notez qu'il ne doit *pas* "
-"être une expression rationnelle, puisque l'implémentation appellera :meth:"
-"`re.escape` sur cette chaîne si nécessaire."
+"un substituant. Sa valeur par défaut est ``$``. Notez qu'il ne doit *pas* "
+"être une expression rationelle, puisque l'implémentation appellera :meth:`re."
+"escape` sur cette chaîne si nécessaire. Notez que vous ne pouvez pas changer "
+"le délimiter après la création d’une classe (c’est-à-dire qu’un délimiter "
+"different doit être attribué à l’espace de nom d’une sous-class de la "
+"classe)."
 
 #: ../Doc/library/string.rst:759
 #, fuzzy
@@ -1312,6 +1323,8 @@ msgid ""
 "*braceidpattern* can be used to define separate patterns used inside and "
 "outside the braces."
 msgstr ""
+"*braceidpattern* peut être utilisé pour définir des motifs séparés , dans et "
+"en dehors des accolades."
 
 #: ../Doc/library/string.rst:774
 msgid ""
@@ -1321,6 +1334,11 @@ msgid ""
 "If given, this allows you to define different patterns for braced and "
 "unbraced placeholders."
 msgstr ""
+"*braceidpattern* —  Comme *idpattern* mais pour décrire des motifs pour des "
+"accolades. La valeur défaut est ``None`` ce qui revient à utiliser "
+"*idpattern* (c’est-à dire que le même motif est utilisé dans et en-dehors "
+"des accolades). Si donné, cela vous permet d’utiliser différents motifs pour "
+"des substituants avec ou sans accolades."
 
 #: ../Doc/library/string.rst:782
 msgid ""
